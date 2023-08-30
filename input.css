@@ -1,3 +1,14 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* 
+input[type=text] {
+   
+    border: 2px solid red;
+
+  } */
+  .check{
+    background-attachment: red;
+  }

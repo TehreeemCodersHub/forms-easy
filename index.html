@@ -1,76 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="css/main.css" />
-    <title>Forms
-    </title>
-</head>
-<body>
-<div class="container py-40 mx-auto min-h-screen ">
-   
-    <div class="container mx-auto bg-white flex flex-row">
-     
-        <div class="w-5/12   mx-auto overflow-hidden">
-            
-            <div flex flex-column mx-auto space-y-12 >
-                
-                <div class="max-w-xs mx-auto mb-9">
-                    <img src="Asset1.png" alt="Image" width="100" class="mx-auto" >
+    <style></style>
+
+    <title>Manage landing page</title>
+  </head>
+
+  <body>
+    <div class="container mx-auto my-14 border-red-50">
+      <!-- whole contauner that hold hole contet -->
+      <!-- <div class="flex mt-28  gap-12"> -->
+      <div class="flex  items-center">
+      
+        <!-- first column -->
+        <div class="w-full lg:w-1/2 mt-14 px-4">
+          <div class="mb-3">
+            <img src="Asset1.png" width="200" class="mx-auto" />
+          </div>
+
+          <form>
+            <!-- form container start here -->
+            <div class="space-y-5 lg:p-10 md:p-10 sm:p-4">
+              <!-- form container start here  -->
+              <div class="w-full">
+                <input
+                  placeholder="Enter Email"
+                  class="placeholder:text-xs bg-white focus:outline-none w-full px-2 py-2 border rounded"
+                />
+              </div>
+              <div class="w-full">
+                <input
+                  placeholder="Enter Password"
+                  class="placeholder:text-xs bg-white w-full focus:outline-none py-2 px-2 border rounded"
+                />
+              </div>
+
+              <div class="flex items-center">
+                <input type="checkbox" class="w-4 h-4" />
+                <label class="ml-2 text-sm">Remember Me</label>
+              </div>
+
+              <!-- button -->
+              <div
+                class="w-full bg-red-600 hover:bg-black cursor-pointer text-center rounded-md text-white"
+              >
+                <button class="my-2 rounded-md">Login</button>
+              </div>
+
+              <!-- cnew section -->
+              <div class="flex  md:flex-row justify-between">
+                <div class="text-xs mb-2 md:mb-0">
+                  <a href="#" class="text-[12px] text-[#5C5C5C]"
+                    >Don't have an account?</a
+                  >
                 </div>
 
-                <div class="space-y-12 w-200">
-                    <form>
-                      <div>
-                        <input type="text" placeholder="Enter email" class="w-full my-6 py-2 text-sm border rounded-none  mt-4">
-                      </div>
-                      <div>
-                        <input type="text" placeholder="Enter password" class="w-full  text-sm py-2 border rounded-none ">
-                      </div>
-                      
-
-                      <div class="flex items-center mt-4 mb-4">
-                        <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4  bg-gray-100 ">
-                        <label for="default-checkbox" class="ml-2 text-sm font-medium text-gray-900 dark:text-gray-300">Remember Me</label>
-                    </div>
-
-                    <div class= 'my-6 mt-12'>
-                        <button type="button" class="py-2.5 px-5 w-full bg-red-600"> Submit </button>
-                    </div>
-
-                    <div class= "flex flex-row space-x-9">
-                        <div class="space-y-10 font-bold text-[#5C5C5C]" >
-                            <p class="text-sm ">Dont't have an account?Sign-up</p>
-                        </div>
-                         <div class = " text-right space-x-4 font-bold text-[#5C5C5C] hover:text-[8102E]">
-                            <p class="text-sm text-right">Forgot password</p>
-                         </div>
-                    </div>
-
-                    </form>
-                  </div>
-            </div> 
-
-
+                <div class="text-xs">
+                  <a href="#" class="text-[12px] text-[#5C5C5C] md:pl-6"
+                    >Forgot Password</a
+                  >
+                </div>
+              </div>
+            </div>
+          </form>
         </div>
+        <!-- Right Column-->
+        <div class="w-1/2 hidden lg:flex">
+          <div class="flex-col text-left mt-2 pt-16 pr-5 space-y-6 p-12">
+            <span class="font-bold text-gray-400 leading-2">
+              ValuSoft is an unique cloud based property valuation portal
+              developed by a team of experienced and accredited valuation
+              professionals. The portal provides online B2B solution for
+              financial institutions, property owners, valuers and inspectors.
+            </span>
 
-        <!-- ITS JUST FOR THE SIDE TEXT -->
-        <div class="w-5/12 mx-auto">
-           <div flex flex-col>
-             <p my-14>
-                ValuSoft is an unique cloud based property valuation portal developed by a team of experienced and accredited valuation professionals. The portal provides online B2B solution for financial institutions, property owners, valuers and inspectors.
+            <span class="font-bold text-gray-400 leading-2">
+              Loaded with robust features, ValuSoft streamlines whole property
+              valuation process in to a hassle free and convenient experience
+              for clients and valuers alike.
+            </span>
 
-             </p>
-             <p>
-                Loaded with robust features, ValuSoft streamlines whole property valuation process in to a hassle free and convenient experience for clients and valuers alike.
-             </p>
-           </div>
+            <div class="absolute bottom-0 right-0">
+              <img src="Group 15615.svg" width="450" />
+            </div>
+          </div>
         </div>
-
-
+        <div></div>
+      </div>
     </div>
-</div>
-
-</body>
+  </body>
 </html>
